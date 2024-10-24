@@ -3,7 +3,7 @@ using EvolPlan.EDA.Handlers.Interfaces;
 
 namespace EvolPlan.EDA.Handlers.Implementations
 {
-    public class OnQuestionAddedFirstHandler : IOnQuestionAdded
+    public class OnQuestionAddedFirstHandler : IOnQuestionAddedHandlers
     {
         public async Task Execute(QuestionAddedModel action)
         {

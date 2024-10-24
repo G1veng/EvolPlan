@@ -2,7 +2,7 @@
 
 namespace EvolPlan.EDA.Handlers.Interfaces
 {
-    public interface IOnQuestionChanged : IHandler<QuestionChangedModel>
+    public interface IOnQuestionChangedHandlers : IHandler<QuestionChangedModel>
     {
         new Task Execute(QuestionChangedModel action);
     }

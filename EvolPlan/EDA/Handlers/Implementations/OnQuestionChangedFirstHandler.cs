@@ -4,7 +4,7 @@ using EvolPlan.EDA.Handlers.Interfaces;
 
 namespace EvolPlan.EDA.Handlers.Implementations
 {
-    public class OnQuestionChangedFirstHandler : IOnQuestionChanged
+    public class OnQuestionChangedFirstHandler : IOnQuestionChangedHandlers
     {
         public async Task Execute(QuestionChangedModel action)
         {

@@ -18,8 +18,8 @@ namespace EvolPlan.EDA
             List<Task> tasks = new List<Task>();
             tasks.AddRange(eventInfo switch
             {
-                QuestionChangedEvent => ExecuteHandlers(typeof(IOnQuestionChanged), eventInfo.Message),
-                QuestionAddedEvent => ExecuteHandlers(typeof(IOnQuestionAdded), eventInfo.Message),
+                QuestionChangedEvent => ExecuteHandlers(typeof(IOnQuestionChangedHandlers), eventInfo.Message),
+                QuestionAddedEvent => ExecuteHandlers(typeof(IOnQuestionAddedHandlers), eventInfo.Message),
                 _ => Enumerable.Empty<Task>(),
             });
 
